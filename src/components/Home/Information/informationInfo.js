@@ -3,6 +3,7 @@ import reception from "../../../images/recept.jpg";
 import grooms from "../../../images/groomsmen.jpeg";
 import intro from "../../../images/Intro.jpg";
 import rehearsal from "../../../images/rehearsal.jpg";
+import event from "../../../images/events.jpg"
 
 import rehearsalPDF from "../../../files/REHEARSAL.pdf"
 import weddingPDF from "../../../files/WEDDING.pdf"
@@ -100,15 +101,18 @@ export const informationInfo = [
     },
     {
         id: 5,
-        event: "",
+        event: "Other Events",
         eventImg: {
-            bkgColor: "#FFFFFF"
+            img: event,
+            bkgColor: "#474044"
         },
-        location: "",
-        date: "",
+        location: "Smaller Events",
+        date: "in celebration of Roy & Sharon",
         details: [
-            "",
-            ""
-        ]
+            "Bachelor Party?",
+            "Currently work in progress",
+            "TBD"
+        ],
+        extension: ""
     }
 ]

@@ -109,6 +109,7 @@ export const informationInfo = [
         location: "Smaller Events",
         date: "in celebration of Roy & Sharon",
         details: [
+            "Basketball Runs",
             "Bachelor Party?",
             "Currently work in progress",
             "TBD"

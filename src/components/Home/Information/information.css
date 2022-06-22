@@ -1,0 +1,191 @@
+.headers {
+    margin-top: 5rem;
+    background-color: var(--mint) !important;
+    width: auto;
+}
+
+.headerTitle {
+    box-shadow: inset 0 0 0 0 rgb(7, 56, 125);
+    color: rgb(7, 56, 125);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    height: 2.75rem;
+    border-radius: 2px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 50px;
+}
+
+.headerTitle:hover {
+    box-shadow: inset 0 140px 0 0 rgb(7, 56, 125);
+    color: white;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.infoContentContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 35px 90px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.infoCard {
+    width: 370px;
+    height: 370px;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.infoCardContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.infoCard:hover .infoCardContent {
+    transform: rotateY(180deg);
+}
+
+.infoCardFront,
+.infoCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.infoCardFront {
+    background-color: rgb(221, 216, 216);
+    box-shadow: 0px 0px 0px grey;
+    -webkit-transition: box-shadow .6s ease-out;
+    box-shadow: 1.2px 1.3px 3px grey;
+    color: black;
+}
+
+.infoCardBack {
+    color: white;
+    transform: rotateY(180deg);
+    -webkit-transition: box-shadow .6s ease-out;
+    box-shadow: 1.2px 1.3px 3px grey;
+}
+
+.details {
+    transition: all .2s ease-in-out;
+    --initialTextColor: #FFF;
+    --slideTextColor: #F5EBEB;
+
+    --slideBgColor: #FFF;
+
+    color: var(--initialTextColor);
+
+    background-image: linear-gradient(90deg,
+            var(--initialBgColor) 0%,
+            var(--initialBgColor) 50%,
+            var(--slideBgColor) 50%,
+            var(--slideBgColor) 100%);
+    background-size: 200%;
+    transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
+        color .2s linear;
+    transition-delay: 0.0s, 0.15s;
+}
+
+.details:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+    color: var(--slideTextColor);
+    cursor: default;
+    background-position: -50% 100%;
+}
+
+.extension {
+    position: absolute;
+    right: 55px;
+    bottom: 0;
+}
+
+.button-28 {
+    appearance: none;
+    background-color: white;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 960px) {
+    .infoContentContainer {
+        width: auto;
+        display: grid;
+        grid-template-columns: 400px 400px;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .infoContentContainer {
+        width: 400px;
+        display: grid;
+        grid-template-columns: 350px;
+        gap: 50px;
+        justify-content: center;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .infoCard {
+        width: 350px;
+        height: 350px;
+        background-color: transparent;
+        perspective: 1000px;
+    }
+}

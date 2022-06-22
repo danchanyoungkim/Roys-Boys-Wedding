@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 2550px;
+    height: calc(100vh - 50px);
+    margin-bottom: 50px;
+}
+
+.leftHomeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+}
+
+.leftContentContainer {
+    width: 60%;
+    align-self: flex-end;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameContainer {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: 20px;
+}
+
+.subText.top {
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.subText.bottom {
+    font-size: 25px;
+    text-align: right;
+    margin: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.homeName {
+    font-size: 50px;
+    margin: 0px;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.description {
+    font-family: 'Quattrocento', serif;
+    font-size: 19px;
+    line-height: 35px;
+    text-align: left;
+}
+
+.description.top {
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+
+.description.middle {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.description.bottom {
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+
+.strong {
+    font-size: 30px;
+    color: maroon;
+}
+
+.rightHomeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+}
+
+.rightContentContainer {
+    width: 60%;
+    position: relative;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    margin-left: 40px;
+    height: 60vh;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.rightContentContainer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 40px;
+    height: 60vh;
+    border-radius: 30px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.256), rgba(0, 0, 0, 0.605));
+    z-index: 2;
+}
+
+.content {
+    text-align: left;
+    margin-left: 50px;
+    z-index: 100;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    color: white;
+}
+
+.displayDescription {
+    margin-top: 200px;
+    font-family: 'bradley hand';
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.displayDescription[animate="1"] {
+    animation-name: slidein;
+    animation-duration: .5s;
+}
+
+.navIcon.left {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    bottom: 45%;
+    left: 40px;
+    color: #DBDBDB;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.navIcon.left:hover {
+    color: white;
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff;
+    width: 55px;
+    height: 55px;
+    top: 44%;
+    bottom: 44%;
+}
+
+.navIcon.right {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    bottom: 45%;
+    right: -35px;
+    color: #DBDBDB;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.navIcon.right:hover {
+    color: white;
+    width: 55px;
+    height: 55px;
+    top: 44%;
+    bottom: 44%;
+}
+
+@keyframes slidein {
+    from {
+        transform: translate(-20px);
+    }
+
+    to {
+        transform: translate(0px)
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Media Screen */
+
+@media screen and (max-width: 1280px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: row;
+        max-width: 2550px;
+        height: calc(100vh - 50px);
+    }
+
+    .leftContentContainer {
+        width: 75%;
+        align-self: flex-end;
+        margin-right: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightContentContainer {
+        width: 75%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .homeContainer {
+        display: block;
+        margin-bottom: 20px;
+        height: 100vh;
+    }
+
+    .leftHomeContainer {
+        margin-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+    }
+
+    .leftContentContainer {
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc {
+        width: 100%;
+        font-family: 'Quattrocento', serif;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .rightHomeContainer {
+        width: 100%;
+        margin-top: 2rem;
+        margin-left: 5.5rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .homeContainer {
+        width: 100%;
+        display: block;
+    }
+
+    .leftContentContainer {
+        width: 70%;
+        margin-right: 30px;
+    }
+
+    .rightHomeContainer {
+        width: 80%;
+        margin-top: 2rem;
+        margin-left: 9.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .rightHomeContainer {
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .homeContainer {
+        margin-bottom: 20px;
+        flex-direction: row;
+        height: calc(100vh - 50px);
+    }
+
+    .rightHomeContainer {
+        width: 100%;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .homeName {
+        font-size: 33px;
+        margin: 0px;
+    }
+}

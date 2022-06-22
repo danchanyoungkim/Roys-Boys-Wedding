@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Julius+Sans+One&display=swap');
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    padding: 30px 10px;
+    align-items: center;
+    position: -webkit-sticky;
+    position: fixed;
+    background-color: #ccbbbb;
+    z-index: 1000;
+}
+
+.name {
+    font-family: 'Allura', cursive;
+    margin-right: 25px;
+    font-size: 32px;
+    margin-left: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navOptionContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navOption {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Julius Sans One', sans-serif;
+    cursor: pointer;
+    padding: 2px 6px;
+}
+
+.navOption:hover {
+    background: rgb(255, 225, 225);
+    color: #3a9782;
+}
+
+.navOption:before,
+.navOption:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+.navOption:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.navOption:hover:before,
+.navOption:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+.space {
+    align-items: stretch;
+    margin-right: auto;
+}
+
+.burger {
+    display: none;
+    visibility: hidden;
+}
+
+.menuitem {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Julius Sans One', sans-serif;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+
+    .navOptionContainer {
+        display: none;
+    }
+
+    .burger {
+        margin-right: 10px;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+.bearAtom {
+    position: relative;
+}
+
+.reminderH2 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 1px;
+    font-family: "Raleway", cursive;
+    font-weight: 100;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 3rem;
+}
+
+.reminderH2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    width: 600px;
+    margin-left: -300px;
+    margin-top: -20px;
+    height: 100px;
+    z-index: -1;
+}
+
+.reminderH2 .reminderP {
+    background: black;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    letter-spacing: 30px;
+    color: white;
+    animation: comein 1.5s 1 ease-in-out forwards;
+}
+
+.bear {
+    position: relative;
+    bottom: -23px;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+@keyframes comein {
+    0% {
+        letter-spacing: 80px;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    70% {
+        letter-spacing: 20px;
+    }
+
+    100% {
+        letter-spacing: 25px;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+/* Text Bubbles */
+
+* {
+    box-sizing: border-box;
+}
+
+.speechColumn {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+    height: 220px;
+    font-family: 'Shizuru', cursive;
+    font-size: 35px;
+}
+
+.speechColumn::after{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+.Left {
+    margin-bottom: 100px;
+}
+
+.speechRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.code {
+    position: relative;
+    width: 160px;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    float: left;
+}
+
+@media screen and (max-width{
+    
+}

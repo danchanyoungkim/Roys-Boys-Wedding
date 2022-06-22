@@ -12,12 +12,12 @@ function Particle() {
                         value: 80,
                         density: {
                             enable: true,
-                            value_area: 1500,
+                            value_area: 500,
                         },
                     },
                     line_linked: {
                         enable: false,
-                        opacity: 0.01,
+                        opacity: 0.05,
                     },
                     move: {
                         direction: "left",

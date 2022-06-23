@@ -18,45 +18,35 @@ import img_11 from "../../../images/11.jpg";
 const Home = () => {
     const displays = [
         {
-            img: img_2,
-            description: "Message from the boys to Roy...",
+            img: img_2
         },
         {
-            img: img_3,
-            description: '"Roy you handsome mofo Sharon’s a lucky lady to be riding in your cockpit" -Brad',
+            img: img_3
         },
         {
-            img: img_4,
-            description: '"Sugma" -Sunbear',
+            img: img_4
         },
         {
-            img: img_5,
-            description: '"" -Jacob',
+            img: img_5
         },
         {
-            img: img_6,
-            description: '"Cockroach!" -Kevin',
+            img: img_6
         },
         {
-            img: img_7,
-            description: '"Congrats on getting diagnosed with onegina" -Jerin',
+            img: img_7
         },
         {
-            img: img_8,
-            description: '"Congratulations on getting married! Wishing you the best as you move into this exciting chapter of your life!" -Alex K.',
+            img: img_8
              
         },
         {
-            img: img_9,
-            description: '"I hope that many happy days are ahead of you. Thanks for all the back massages and for being a good friend, Xoxo"-Antonio',
+            img: img_9
         },
         {
-            img: img_10,
-            description: '"" -Nathan',
+            img: img_10
         },
         {
-            img: img_11,
-            description: '"See you on the East Coast big boy." -Nick',
+            img: img_11
         }
     ]
 

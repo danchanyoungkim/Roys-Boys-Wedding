@@ -1,4 +1,4 @@
-/* h1 {  
+h1 {  
   margin: 20px;
   text-align: center;
   font: 2.25em;
@@ -24,7 +24,7 @@ strong {
   display: block;
 }
 
-#interval{
+/* #interval{
   font-family: monospace;
   padding-left: 20px;
   font-size: 0.9em;
@@ -45,7 +45,7 @@ strong {
   margin-left: auto;
   margin-right: auto;
   border-bottom: 100px;
-}
+} */
 
 @media screen and (max-width: 1400px) {
   .interval {
@@ -116,4 +116,4 @@ strong {
   .timer {
     margin-top: 20rem;
   }
-} */
+}

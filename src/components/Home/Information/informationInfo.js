@@ -24,8 +24,7 @@ export const informationInfo = [
             "3:30 pm - 4:30 pm",
             "Korean Philippi Presbyterian Church",
             "1969 East Touhy Ave Des Plaines, IL 60018",
-            "Semi-Formal Attire",
-            "REQUIRED FOR BEST MEN & GROOMSMEN"
+            "Semi-Formal Attire"
         ],
         extension: rehearsalPDF
     },
@@ -74,7 +73,6 @@ export const informationInfo = [
         location: "Please Read",
         date: "If Best Men & Groomsmen",
         details: [
-            "Please wear:",
             "Black Suit",
             "White Shirt",
             "Golden Ties (Provided)",

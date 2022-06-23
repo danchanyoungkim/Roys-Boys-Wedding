@@ -26,18 +26,21 @@ strong {
 
 .time {
   text-transform: uppercase;
-  font-size: 1.30rem;
+  font-size: 1.40rem;
   display: flexbox;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 100px;
   font-family: monospace;
-  padding-right: 15px;
-  opacity: 70%;
+  padding-right: 16px;
   text-align: center;
 }
 
+.border {
+  border-left: solid 1px red;
+  padding-left: 16px;
+}
 
 @media screen and (max-width: 1400px) {
   .time {

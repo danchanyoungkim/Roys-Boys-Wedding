@@ -24,7 +24,7 @@ strong {
   display: block;
 }
 
-/* #interval{
+#interval{
   font-family: monospace;
   padding-left: 20px;
   font-size: 0.9em;
@@ -35,7 +35,7 @@ strong {
 
 #interval:first-child {
   border-left: none;
-} */
+}
 
 .time {
   text-transform: uppercase;

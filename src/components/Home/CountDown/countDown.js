@@ -1,57 +1,3 @@
-// import React, { useEffect, useState } from "react";
-// import "./dateTime.css"
-
-// function CountDown() {
-//   const calculateTimeLeft = () => {
-//     let year = new Date().getFullYear();
-//     const difference = +new Date(`${year}-07-30`) - +new Date();
-//     let timeLeft = {};
-
-//     if (difference > 0) {
-//       timeLeft = {
-//         Days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-//         Hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-//         Minutes: Math.floor((difference / 1000 / 60) % 60),
-//         Seconds: Math.floor((difference / 1000) % 60),
-//       };
-//     }
-
-//     return timeLeft;
-//   };
-
-//   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-//   useEffect(() => {
-//     setTimeout(() => {
-//       setTimeLeft(calculateTimeLeft());
-//     }, 1000);
-//   });
-
-//   const timerComponents = [];
-
-//   Object.keys(timeLeft).forEach((interval) => {    
-//     timerComponents.push(
-//       <span className="time" id="interval" key={interval}>
-//         {timeLeft[interval]} {interval}{" "}
-//       </span>
-//     );
-//   });
-
-//   return (
-//     <div>
-//       <div className="timer">
-//         <h1>Wedding <strong>Countdown</strong></h1>
-//         <div className="time">
-//           {timerComponents.length ? timerComponents : <span>Congratulations!</span>}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-
-// export default CountDown;
-
 import React, { Component } from "react";
 import "./dateTime.css";
 
@@ -63,7 +9,7 @@ class CountDown extends Component {
       days: 0,
       minutes: 0,
       hours: 0,
-      secounds: 0,
+      seconds: 0,
       time_up: ""
     };
     this.x = null;
@@ -91,7 +37,7 @@ class CountDown extends Component {
         minutes: 0,
         hours: 0,
         seconds: 0,
-        time_up: "TIME IS UP"
+        time_up: "Congratulations!"
       });
     }
   }
@@ -104,29 +50,22 @@ class CountDown extends Component {
   render() {
     const { days, seconds, hours, minutes } = this.state;
     return (
-      <div id="countdown">
-        <div className="col-4">
-          <div className="box">
-            <p id="day">{days}</p>
-            <span className="text">Days</span>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="box">
-            <p id="hour">{hours}</p>
-            <span className="text">Hours</span>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="box">
-            <p id="minute">{minutes}</p>
-            <span className="text">Minutes</span>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="box">
-            <p id="second">{seconds}</p>
-            <span className="text">Seconds</span>
+      <div>
+        <div className="timer">
+          <h1>Wedding <strong>Countdown</strong></h1>
+          <div className="time">
+            <span className="time" id="interval">
+              {days} Days
+            </span>
+            <span className="time" id="interval">
+              {hours} Hours
+            </span>
+            <span className="time" id="interval">
+              {minutes} Minutes
+            </span>
+            <span className="time" id="interval">
+              {seconds} Seconds
+            </span>
           </div>
         </div>
       </div>

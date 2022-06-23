@@ -114,6 +114,6 @@ export const informationInfo = [
             "Currently work in progress",
             "TBD"
         ],
-        extension: ""
+        extension: "https://op-rd.herokuapp.com/"
     }
 ]

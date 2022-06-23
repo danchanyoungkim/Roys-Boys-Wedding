@@ -149,7 +149,7 @@
 
 @media screen and (max-width: 670px) {
     .speechColumn {
-        font-size: 35px;
+        font-size: 33px;
     }
 }
 
@@ -161,14 +161,16 @@
     .code {
         justify-content: center;
         align-items: center;
-        position: absolute;
-        width: 200px;
-        bottom: 20px;
-        right: 50px;
+        position: flex;
+        width: 50%;
     }
 
     .Left {
         margin-top: 7rem;
         margin-bottom: 50px;
+    }
+
+    .speechColumn {
+        font-size: 45px;
     }
 }

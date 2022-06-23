@@ -55,13 +55,13 @@ class CountDown extends Component {
           <h1>Wedding <strong>Countdown</strong></h1>
           <div className="time">
             <span className="time">
-              {days} Days
+              {days} Days  |
             </span>
             <span className="time">
-              {hours} Hours
+              {hours} Hours  |
             </span>
             <span className="time">
-              {minutes} Minutes
+              {minutes} Minutes  |
             </span>
             <span className="time">
               {seconds} Seconds

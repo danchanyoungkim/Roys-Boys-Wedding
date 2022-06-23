@@ -26,16 +26,16 @@ strong {
 
 .time {
   text-transform: uppercase;
-  font-size: 1.50rem;
+  font-size: 1.30rem;
   display: flexbox;
-  width: 60%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 100px;
   font-family: monospace;
-  padding-left: 20px;
-  padding-right: 20px;
-  opacity: 80%;
+  padding-right: 15px;
+  opacity: 70%;
+  text-align: center;
 }
 
 
@@ -95,5 +95,11 @@ strong {
 @media screen and (max-width: 400px) {
   .timer {
     margin-top: 20rem;
+  }
+}
+
+@media screen and (max-width: 265px) {
+  .timer {
+    margin-top: 28rem;
   }
 }

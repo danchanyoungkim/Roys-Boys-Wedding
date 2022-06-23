@@ -75,7 +75,7 @@ strong {
     font-size: 1rem;
     border: 0px;
     padding: 0px;
-    margin-top: 4rem;
+    margin-top: 0rem;
   }
 
   .time {
@@ -89,7 +89,7 @@ strong {
   }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .timer {
     margin-top: 15rem;
   }
@@ -105,4 +105,4 @@ strong {
   .timer {
     margin-top: 28rem;
   }
-}
+} */

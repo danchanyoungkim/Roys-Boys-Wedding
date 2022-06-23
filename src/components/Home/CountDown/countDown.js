@@ -54,16 +54,16 @@ class CountDown extends Component {
         <div className="timer">
           <h1>Wedding <strong>Countdown</strong></h1>
           <div className="time">
-            <span className="time" id="interval">
+            <span className="time">
               {days} Days
             </span>
-            <span className="time" id="interval">
+            <span className="time">
               {hours} Hours
             </span>
-            <span className="time" id="interval">
+            <span className="time">
               {minutes} Minutes
             </span>
-            <span className="time" id="interval">
+            <span className="time">
               {seconds} Seconds
             </span>
           </div>
